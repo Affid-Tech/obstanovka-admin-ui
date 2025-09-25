@@ -22,7 +22,26 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@/app/*": [
+        "src/app/*"
+      ],
+      "@/lib/*": [
+        "src/lib/*"
+      ],
+      "@/api/*": [
+        "src/api/*"
+      ],
+      "@/components/*": [
+        "src/components/*"
+      ],
+      "@/features/*": [
+        "src/features/*"
+      ]
+    }
   },
   "include": ["src"]
 }
