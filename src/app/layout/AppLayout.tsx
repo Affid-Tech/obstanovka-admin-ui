@@ -13,6 +13,7 @@ export function AppLayout() {
                     <Divider />
                     <List>
                         <ListItemButton component={NavLink} to="/dashboard">Dashboard</ListItemButton>
+                        <ListItemButton component={NavLink} to="/equipment">Equipment</ListItemButton>
                     </List>
                 </Box>
             </Grid>

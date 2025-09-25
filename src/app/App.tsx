@@ -4,6 +4,9 @@ import {AppLayout} from './layout/AppLayout';
 import {RequireAuth} from '@/features/auth/RequireAuth';
 import {SignInPage} from '@/features/auth/SignInPage';
 import {DashboardPage} from '@/features/dashboard/DashboardPage';
+import {EquipmentListPage} from '@/features/equipment/EquipmentListPage';
+import {EquipmentFormPage} from '@/features/equipment/EquipmentFormPage';
+import {EquipmentViewPage} from '@/features/equipment/EquipmentViewPage';
 
 
 export default function App() {
@@ -11,7 +14,6 @@ export default function App() {
         <Box sx={{ minHeight: '100dvh', display: 'flex' }}>
             <Routes>
                 <Route path="/signin" element={<SignInPage />} />
-
 
                 <Route
                     element={
@@ -22,6 +24,13 @@ export default function App() {
                 >
                     <Route index element={<Navigate to="/dashboard" replace />} />
                     <Route path="/dashboard" element={<DashboardPage />} />
+
+
+                    {/* Equipment CRUD */}
+                    <Route path="/equipment" element={<EquipmentListPage />} />
+                    <Route path="/equipment/new" element={<EquipmentFormPage mode="create" />} />
+                    <Route path="/equipment/:id" element={<EquipmentViewPage />} />
+                    <Route path="/equipment/:id/edit" element={<EquipmentFormPage mode="edit" />} />
                 </Route>
 
 
