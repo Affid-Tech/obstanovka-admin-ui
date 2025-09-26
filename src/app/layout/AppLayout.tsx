@@ -14,6 +14,7 @@ export function AppLayout() {
                     <List>
                         <ListItemButton component={NavLink} to="/dashboard">Dashboard</ListItemButton>
                         <ListItemButton component={NavLink} to="/equipment">Equipment</ListItemButton>
+                        <ListItemButton component={NavLink} to="/cities">Cities</ListItemButton>
                     </List>
                 </Box>
             </Grid>

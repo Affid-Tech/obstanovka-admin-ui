@@ -7,7 +7,7 @@ import {DashboardPage} from '@/features/dashboard/DashboardPage';
 import {EquipmentListPage} from '@/features/equipment/EquipmentListPage';
 import {EquipmentFormPage} from '@/features/equipment/EquipmentFormPage';
 import {EquipmentViewPage} from '@/features/equipment/EquipmentViewPage';
-
+import { CitiesListPage } from "@/features/cities";
 
 export default function App() {
     return (
@@ -31,6 +31,9 @@ export default function App() {
                     <Route path="/equipment/new" element={<EquipmentFormPage mode="create" />} />
                     <Route path="/equipment/:id" element={<EquipmentViewPage />} />
                     <Route path="/equipment/:id/edit" element={<EquipmentFormPage mode="edit" />} />
+
+                    <Route path="/cities" element={<CitiesListPage />} />
+
                 </Route>
 
 
